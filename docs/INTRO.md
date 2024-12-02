@@ -4,7 +4,7 @@ Nodejs is a **JavaScript runtime environment** that allows you to run JavaScript
 
 ![Node](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExenpzN2RrbnBjNDUwd3JzaGwzbmhtcmE1Z2R3eXlzZHZuN3htYW9yZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2fP66XQMqGByErDm63/giphy.gif)
 
-A JavaScript runtime environment is composed of several components that allow JavaScript code to be executed outside of a web browser:
+A JavaScript runtime environment is composed of several components:
 
 1. **JavaScript Engine**: This is the core component that interprets and executes JavaScript code. Examples include V8 (used in Node.js and Chrome) and SpiderMonkey (used in Firefox).
 
@@ -20,3 +20,4 @@ A JavaScript runtime environment is composed of several components that allow Ja
 
 Together, these components enable JavaScript to perform complex tasks efficiently, supporting event-driven, non-blocking I/O operations.
 
+**The Javascript Engine is responsible for executing the code, the Call Stack is responsible for keeping track of the current execution context, and the Event Loop is responsible for handling the asynchronous operations. All these components work together to provide a fast and efficient way of executing JavaScript code.**
