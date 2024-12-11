@@ -1,17 +1,19 @@
 import { createServer } from "node:http";
-const PORT = 3000;
 
-const handleRequests = (req, res) => {
-  console.log("Request received");
+const arr = [1, 2, 3, 4, 5];
 
-  // We have authenticated the request and now we can send back a response
-  res.writeHead(200, { "Content-Type": "application/json" });
-  res.end(JSON.stringify({ message: "Hello World" }));
+const user = {
+  name: "John",
+  age: 30,
 };
 
-const server = createServer(handleRequests);
+const requestHandler = (req, res) => {
+  console.log(req);
+  res.end(JSON.stringify(user));
+};
 
-server.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`.yellow);
-  console.log(`http://localhost:${PORT}`.green);
+const server = createServer(requestHandler);
+const port = 3000;
+server.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
